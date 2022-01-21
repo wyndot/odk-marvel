@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66F92678279B2F19002D109A /* ODK_MarvelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F92677279B2F19002D109A /* ODK_MarvelApp.swift */; };
+		66F9267A279B2F19002D109A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F92679279B2F19002D109A /* ContentView.swift */; };
+		66F9267C279B2F1B002D109A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66F9267B279B2F1B002D109A /* Assets.xcassets */; };
+		66F9267F279B2F1B002D109A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66F9267E279B2F1B002D109A /* Preview Assets.xcassets */; };
+		66F92681279B2F1B002D109A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F92680279B2F1B002D109A /* Persistence.swift */; };
+		66F92684279B2F1B002D109A /* ODK_Marvel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 66F92682279B2F1B002D109A /* ODK_Marvel.xcdatamodeld */; };
+		66F9268E279B2F1B002D109A /* ODK_MarvelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F9268D279B2F1B002D109A /* ODK_MarvelTests.swift */; };
+		66F92698279B2F1B002D109A /* ODK_MarvelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F92697279B2F1B002D109A /* ODK_MarvelUITests.swift */; };
+		66F9269A279B2F1B002D109A /* ODK_MarvelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F92699279B2F1B002D109A /* ODK_MarvelUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66F9268A279B2F1B002D109A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66F9266C279B2F19002D109A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66F92673279B2F19002D109A;
+			remoteInfo = "ODK Marvel";
+		};
+		66F92694279B2F1B002D109A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66F9266C279B2F19002D109A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66F92673279B2F19002D109A;
+			remoteInfo = "ODK Marvel";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		66F92674279B2F19002D109A /* ODK Marvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ODK Marvel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66F92677279B2F19002D109A /* ODK_MarvelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODK_MarvelApp.swift; sourceTree = "<group>"; };
+		66F92679279B2F19002D109A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		66F9267B279B2F1B002D109A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66F9267E279B2F1B002D109A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		66F92680279B2F1B002D109A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		66F92683279B2F1B002D109A /* ODK_Marvel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ODK_Marvel.xcdatamodel; sourceTree = "<group>"; };
+		66F92689279B2F1B002D109A /* ODK MarvelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ODK MarvelTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66F9268D279B2F1B002D109A /* ODK_MarvelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODK_MarvelTests.swift; sourceTree = "<group>"; };
+		66F92693279B2F1B002D109A /* ODK MarvelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ODK MarvelUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66F92697279B2F1B002D109A /* ODK_MarvelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODK_MarvelUITests.swift; sourceTree = "<group>"; };
+		66F92699279B2F1B002D109A /* ODK_MarvelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODK_MarvelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66F92671279B2F19002D109A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66F92686279B2F1B002D109A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66F92690279B2F1B002D109A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66F9266B279B2F19002D109A = {
+			isa = PBXGroup;
+			children = (
+				66F92676279B2F19002D109A /* ODK Marvel */,
+				66F9268C279B2F1B002D109A /* ODK MarvelTests */,
+				66F92696279B2F1B002D109A /* ODK MarvelUITests */,
+				66F92675279B2F19002D109A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66F92675279B2F19002D109A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66F92674279B2F19002D109A /* ODK Marvel.app */,
+				66F92689279B2F1B002D109A /* ODK MarvelTests.xctest */,
+				66F92693279B2F1B002D109A /* ODK MarvelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66F92676279B2F19002D109A /* ODK Marvel */ = {
+			isa = PBXGroup;
+			children = (
+				66F92677279B2F19002D109A /* ODK_MarvelApp.swift */,
+				66F92679279B2F19002D109A /* ContentView.swift */,
+				66F9267B279B2F1B002D109A /* Assets.xcassets */,
+				66F92680279B2F1B002D109A /* Persistence.swift */,
+				66F92682279B2F1B002D109A /* ODK_Marvel.xcdatamodeld */,
+				66F9267D279B2F1B002D109A /* Preview Content */,
+			);
+			path = "ODK Marvel";
+			sourceTree = "<group>";
+		};
+		66F9267D279B2F1B002D109A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				66F9267E279B2F1B002D109A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		66F9268C279B2F1B002D109A /* ODK MarvelTests */ = {
+			isa = PBXGroup;
+			children = (
+				66F9268D279B2F1B002D109A /* ODK_MarvelTests.swift */,
+			);
+			path = "ODK MarvelTests";
+			sourceTree = "<group>";
+		};
+		66F92696279B2F1B002D109A /* ODK MarvelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				66F92697279B2F1B002D109A /* ODK_MarvelUITests.swift */,
+				66F92699279B2F1B002D109A /* ODK_MarvelUITestsLaunchTests.swift */,
+			);
+			path = "ODK MarvelUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66F92673279B2F19002D109A /* ODK Marvel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66F9269D279B2F1B002D109A /* Build configuration list for PBXNativeTarget "ODK Marvel" */;
+			buildPhases = (
+				66F92670279B2F19002D109A /* Sources */,
+				66F92671279B2F19002D109A /* Frameworks */,
+				66F92672279B2F19002D109A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ODK Marvel";
+			productName = "ODK Marvel";
+			productReference = 66F92674279B2F19002D109A /* ODK Marvel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66F92688279B2F1B002D109A /* ODK MarvelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66F926A0279B2F1B002D109A /* Build configuration list for PBXNativeTarget "ODK MarvelTests" */;
+			buildPhases = (
+				66F92685279B2F1B002D109A /* Sources */,
+				66F92686279B2F1B002D109A /* Frameworks */,
+				66F92687279B2F1B002D109A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66F9268B279B2F1B002D109A /* PBXTargetDependency */,
+			);
+			name = "ODK MarvelTests";
+			productName = "ODK MarvelTests";
+			productReference = 66F92689279B2F1B002D109A /* ODK MarvelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		66F92692279B2F1B002D109A /* ODK MarvelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66F926A3279B2F1B002D109A /* Build configuration list for PBXNativeTarget "ODK MarvelUITests" */;
+			buildPhases = (
+				66F9268F279B2F1B002D109A /* Sources */,
+				66F92690279B2F1B002D109A /* Frameworks */,
+				66F92691279B2F1B002D109A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66F92695279B2F1B002D109A /* PBXTargetDependency */,
+			);
+			name = "ODK MarvelUITests";
+			productName = "ODK MarvelUITests";
+			productReference = 66F92693279B2F1B002D109A /* ODK MarvelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66F9266C279B2F19002D109A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					66F92673279B2F19002D109A = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					66F92688279B2F1B002D109A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 66F92673279B2F19002D109A;
+					};
+					66F92692279B2F1B002D109A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 66F92673279B2F19002D109A;
+					};
+				};
+			};
+			buildConfigurationList = 66F9266F279B2F19002D109A /* Build configuration list for PBXProject "ODK Marvel" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66F9266B279B2F19002D109A;
+			productRefGroup = 66F92675279B2F19002D109A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66F92673279B2F19002D109A /* ODK Marvel */,
+				66F92688279B2F1B002D109A /* ODK MarvelTests */,
+				66F92692279B2F1B002D109A /* ODK MarvelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66F92672279B2F19002D109A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66F9267F279B2F1B002D109A /* Preview Assets.xcassets in Resources */,
+				66F9267C279B2F1B002D109A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66F92687279B2F1B002D109A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66F92691279B2F1B002D109A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66F92670279B2F19002D109A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66F92681279B2F1B002D109A /* Persistence.swift in Sources */,
+				66F9267A279B2F19002D109A /* ContentView.swift in Sources */,
+				66F92678279B2F19002D109A /* ODK_MarvelApp.swift in Sources */,
+				66F92684279B2F1B002D109A /* ODK_Marvel.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66F92685279B2F1B002D109A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66F9268E279B2F1B002D109A /* ODK_MarvelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66F9268F279B2F1B002D109A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66F9269A279B2F1B002D109A /* ODK_MarvelUITestsLaunchTests.swift in Sources */,
+				66F92698279B2F1B002D109A /* ODK_MarvelUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66F9268B279B2F1B002D109A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66F92673279B2F19002D109A /* ODK Marvel */;
+			targetProxy = 66F9268A279B2F1B002D109A /* PBXContainerItemProxy */;
+		};
+		66F92695279B2F1B002D109A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66F92673279B2F19002D109A /* ODK Marvel */;
+			targetProxy = 66F92694279B2F1B002D109A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		66F9269B279B2F1B002D109A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		66F9269C279B2F1B002D109A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66F9269E279B2F1B002D109A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ODK Marvel/Preview Content\"";
+				DEVELOPMENT_TEAM = NJ8AARD76W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wyndot.ODK-Marvel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66F9269F279B2F1B002D109A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ODK Marvel/Preview Content\"";
+				DEVELOPMENT_TEAM = NJ8AARD76W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wyndot.ODK-Marvel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		66F926A1279B2F1B002D109A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NJ8AARD76W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wyndot.ODK-MarvelTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ODK Marvel.app/ODK Marvel";
+			};
+			name = Debug;
+		};
+		66F926A2279B2F1B002D109A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NJ8AARD76W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wyndot.ODK-MarvelTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ODK Marvel.app/ODK Marvel";
+			};
+			name = Release;
+		};
+		66F926A4279B2F1B002D109A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NJ8AARD76W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wyndot.ODK-MarvelUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ODK Marvel";
+			};
+			name = Debug;
+		};
+		66F926A5279B2F1B002D109A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NJ8AARD76W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wyndot.ODK-MarvelUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ODK Marvel";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66F9266F279B2F19002D109A /* Build configuration list for PBXProject "ODK Marvel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66F9269B279B2F1B002D109A /* Debug */,
+				66F9269C279B2F1B002D109A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66F9269D279B2F1B002D109A /* Build configuration list for PBXNativeTarget "ODK Marvel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66F9269E279B2F1B002D109A /* Debug */,
+				66F9269F279B2F1B002D109A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66F926A0279B2F1B002D109A /* Build configuration list for PBXNativeTarget "ODK MarvelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66F926A1279B2F1B002D109A /* Debug */,
+				66F926A2279B2F1B002D109A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66F926A3279B2F1B002D109A /* Build configuration list for PBXNativeTarget "ODK MarvelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66F926A4279B2F1B002D109A /* Debug */,
+				66F926A5279B2F1B002D109A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		66F92682279B2F1B002D109A /* ODK_Marvel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				66F92683279B2F1B002D109A /* ODK_Marvel.xcdatamodel */,
+			);
+			currentVersion = 66F92683279B2F1B002D109A /* ODK_Marvel.xcdatamodel */;
+			path = ODK_Marvel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 66F9266C279B2F19002D109A /* Project object */;
+}
