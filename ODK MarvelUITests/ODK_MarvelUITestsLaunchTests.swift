@@ -19,8 +19,9 @@ class ODK_MarvelUITestsLaunchTests: XCTestCase {
 
     func testLaunch() throws {
         let app = XCUIApplication()
+        app.launchEnvironment = ["marvel_private_key": "", "marvel_public_key": ""]
         app.launch()
-
+        
         // Insert steps here to perform after app launch but before taking a screenshot,
         // such as logging into a test account or navigating somewhere in the app
 

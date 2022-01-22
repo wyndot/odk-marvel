@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66475B70279C1E92000A4E31 /* MVCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66475B6F279C1E92000A4E31 /* MVCache.swift */; };
+		66475B72279C2607000A4E31 /* MVCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66475B71279C2607000A4E31 /* MVCacheTests.swift */; };
 		66BBC2C7279B326400AC97EC /* MarvelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BBC2C6279B326400AC97EC /* MarvelAPI.swift */; };
 		66BBC2CA279B33C900AC97EC /* MVURI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BBC2C9279B33C900AC97EC /* MVURI.swift */; };
 		66BBC2D0279B356E00AC97EC /* MVList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BBC2CF279B356E00AC97EC /* MVList.swift */; };
@@ -19,6 +21,11 @@
 		66BBC2DF279B56BC00AC97EC /* Dictionary+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BBC2DE279B56BC00AC97EC /* Dictionary+Ext.swift */; };
 		66BBC2E1279B591100AC97EC /* MVExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BBC2E0279B591100AC97EC /* MVExtensionTests.swift */; };
 		66BBC2E3279B66A700AC97EC /* MVAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BBC2E2279B66A700AC97EC /* MVAPITests.swift */; };
+		66BBC2E5279B815100AC97EC /* MarvelListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BBC2E4279B815100AC97EC /* MarvelListView.swift */; };
+		66BBC2E7279B816300AC97EC /* MarvelDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BBC2E6279B816300AC97EC /* MarvelDetailView.swift */; };
+		66BBC2EB279B832100AC97EC /* MarvelCharacterListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BBC2EA279B832100AC97EC /* MarvelCharacterListItem.swift */; };
+		66BBC2ED279B834F00AC97EC /* MarvelCharacterDetailItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BBC2EC279B834F00AC97EC /* MarvelCharacterDetailItem.swift */; };
+		66BBC2EF279B8ADA00AC97EC /* MarvelCharacterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BBC2EE279B8ADA00AC97EC /* MarvelCharacterList.swift */; };
 		66F92678279B2F19002D109A /* ODK_MarvelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F92677279B2F19002D109A /* ODK_MarvelApp.swift */; };
 		66F9267A279B2F19002D109A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F92679279B2F19002D109A /* ContentView.swift */; };
 		66F9267C279B2F1B002D109A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66F9267B279B2F1B002D109A /* Assets.xcassets */; };
@@ -48,6 +55,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		66475B6F279C1E92000A4E31 /* MVCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCache.swift; sourceTree = "<group>"; };
+		66475B71279C2607000A4E31 /* MVCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCacheTests.swift; sourceTree = "<group>"; };
+		66527215279C3ED800C86275 /* ODK-Marvel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ODK-Marvel-Info.plist"; sourceTree = SOURCE_ROOT; };
+		66527216279C3F6000C86275 /* ODK-MarvelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ODK-MarvelTests-Info.plist"; sourceTree = SOURCE_ROOT; };
+		66527217279C3F6700C86275 /* ODK-MarvelUITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ODK-MarvelUITests-Info.plist"; sourceTree = SOURCE_ROOT; };
 		66BBC2C6279B326400AC97EC /* MarvelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPI.swift; sourceTree = "<group>"; };
 		66BBC2C9279B33C900AC97EC /* MVURI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVURI.swift; sourceTree = "<group>"; };
 		66BBC2CF279B356E00AC97EC /* MVList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVList.swift; sourceTree = "<group>"; };
@@ -60,6 +72,11 @@
 		66BBC2DE279B56BC00AC97EC /* Dictionary+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Ext.swift"; sourceTree = "<group>"; };
 		66BBC2E0279B591100AC97EC /* MVExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVExtensionTests.swift; sourceTree = "<group>"; };
 		66BBC2E2279B66A700AC97EC /* MVAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVAPITests.swift; sourceTree = "<group>"; };
+		66BBC2E4279B815100AC97EC /* MarvelListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelListView.swift; sourceTree = "<group>"; };
+		66BBC2E6279B816300AC97EC /* MarvelDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelDetailView.swift; sourceTree = "<group>"; };
+		66BBC2EA279B832100AC97EC /* MarvelCharacterListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharacterListItem.swift; sourceTree = "<group>"; };
+		66BBC2EC279B834F00AC97EC /* MarvelCharacterDetailItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharacterDetailItem.swift; sourceTree = "<group>"; };
+		66BBC2EE279B8ADA00AC97EC /* MarvelCharacterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharacterList.swift; sourceTree = "<group>"; };
 		66F92674279B2F19002D109A /* ODK Marvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ODK Marvel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F92677279B2F19002D109A /* ODK_MarvelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODK_MarvelApp.swift; sourceTree = "<group>"; };
 		66F92679279B2F19002D109A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +116,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66475B6E279C1D17000A4E31 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				66475B6F279C1E92000A4E31 /* MVCache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
 		66BBC2C5279B306300AC97EC /* Marvel_API */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +156,23 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		66BBC2E8279B828A00AC97EC /* Marvel_Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Marvel_Views;
+			sourceTree = "<group>";
+		};
+		66BBC2E9279B829B00AC97EC /* Marvel_ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				66BBC2EA279B832100AC97EC /* MarvelCharacterListItem.swift */,
+				66BBC2EC279B834F00AC97EC /* MarvelCharacterDetailItem.swift */,
+				66BBC2EE279B8ADA00AC97EC /* MarvelCharacterList.swift */,
+			);
+			path = Marvel_ViewModels;
+			sourceTree = "<group>";
+		};
 		66F9266B279B2F19002D109A = {
 			isa = PBXGroup;
 			children = (
@@ -154,10 +196,16 @@
 		66F92676279B2F19002D109A /* ODK Marvel */ = {
 			isa = PBXGroup;
 			children = (
+				66527215279C3ED800C86275 /* ODK-Marvel-Info.plist */,
+				66475B6E279C1D17000A4E31 /* Cache */,
+				66BBC2E9279B829B00AC97EC /* Marvel_ViewModels */,
+				66BBC2E8279B828A00AC97EC /* Marvel_Views */,
 				66BBC2DB279B439900AC97EC /* Extensions */,
 				66BBC2C5279B306300AC97EC /* Marvel_API */,
 				66F92677279B2F19002D109A /* ODK_MarvelApp.swift */,
 				66F92679279B2F19002D109A /* ContentView.swift */,
+				66BBC2E4279B815100AC97EC /* MarvelListView.swift */,
+				66BBC2E6279B816300AC97EC /* MarvelDetailView.swift */,
 				66F9267B279B2F1B002D109A /* Assets.xcassets */,
 				66F92680279B2F1B002D109A /* Persistence.swift */,
 				66F92682279B2F1B002D109A /* ODK_Marvel.xcdatamodeld */,
@@ -177,9 +225,11 @@
 		66F9268C279B2F1B002D109A /* ODK MarvelTests */ = {
 			isa = PBXGroup;
 			children = (
+				66527216279C3F6000C86275 /* ODK-MarvelTests-Info.plist */,
 				66F9268D279B2F1B002D109A /* ODK_MarvelTests.swift */,
 				66BBC2E0279B591100AC97EC /* MVExtensionTests.swift */,
 				66BBC2E2279B66A700AC97EC /* MVAPITests.swift */,
+				66475B71279C2607000A4E31 /* MVCacheTests.swift */,
 			);
 			path = "ODK MarvelTests";
 			sourceTree = "<group>";
@@ -187,6 +237,7 @@
 		66F92696279B2F1B002D109A /* ODK MarvelUITests */ = {
 			isa = PBXGroup;
 			children = (
+				66527217279C3F6700C86275 /* ODK-MarvelUITests-Info.plist */,
 				66F92697279B2F1B002D109A /* ODK_MarvelUITests.swift */,
 				66F92699279B2F1B002D109A /* ODK_MarvelUITestsLaunchTests.swift */,
 			);
@@ -326,14 +377,20 @@
 				66BBC2DA279B387700AC97EC /* MVDataWrapper.swift in Sources */,
 				66BBC2CA279B33C900AC97EC /* MVURI.swift in Sources */,
 				66BBC2C7279B326400AC97EC /* MarvelAPI.swift in Sources */,
+				66BBC2EF279B8ADA00AC97EC /* MarvelCharacterList.swift in Sources */,
 				66BBC2DF279B56BC00AC97EC /* Dictionary+Ext.swift in Sources */,
+				66BBC2ED279B834F00AC97EC /* MarvelCharacterDetailItem.swift in Sources */,
+				66475B70279C1E92000A4E31 /* MVCache.swift in Sources */,
 				66BBC2DD279B43B800AC97EC /* String+Ext.swift in Sources */,
 				66BBC2D6279B370700AC97EC /* MVCharacter.swift in Sources */,
+				66BBC2E7279B816300AC97EC /* MarvelDetailView.swift in Sources */,
 				66BBC2D8279B37ED00AC97EC /* MVDataContainer.swift in Sources */,
 				66BBC2D0279B356E00AC97EC /* MVList.swift in Sources */,
 				66F92681279B2F1B002D109A /* Persistence.swift in Sources */,
 				66BBC2D2279B35FD00AC97EC /* MVURL.swift in Sources */,
+				66BBC2EB279B832100AC97EC /* MarvelCharacterListItem.swift in Sources */,
 				66F9267A279B2F19002D109A /* ContentView.swift in Sources */,
+				66BBC2E5279B815100AC97EC /* MarvelListView.swift in Sources */,
 				66BBC2D4279B363900AC97EC /* MVPath.swift in Sources */,
 				66F92678279B2F19002D109A /* ODK_MarvelApp.swift in Sources */,
 				66F92684279B2F1B002D109A /* ODK_Marvel.xcdatamodeld in Sources */,
@@ -346,6 +403,7 @@
 			files = (
 				66BBC2E1279B591100AC97EC /* MVExtensionTests.swift in Sources */,
 				66F9268E279B2F1B002D109A /* ODK_MarvelTests.swift in Sources */,
+				66475B72279C2607000A4E31 /* MVCacheTests.swift in Sources */,
 				66BBC2E3279B66A700AC97EC /* MVAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,6 +560,7 @@
 				DEVELOPMENT_TEAM = NJ8AARD76W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ODK-Marvel-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -531,6 +590,7 @@
 				DEVELOPMENT_TEAM = NJ8AARD76W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ODK-Marvel-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -558,6 +618,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NJ8AARD76W;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ODK-MarvelTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wyndot.ODK-MarvelTests";
@@ -578,6 +639,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NJ8AARD76W;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ODK-MarvelTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wyndot.ODK-MarvelTests";
@@ -597,6 +659,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NJ8AARD76W;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ODK-MarvelUITests-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wyndot.ODK-MarvelUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -615,6 +679,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NJ8AARD76W;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ODK-MarvelUITests-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wyndot.ODK-MarvelUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
