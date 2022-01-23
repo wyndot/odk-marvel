@@ -11,6 +11,7 @@
 		66475B72279C2607000A4E31 /* MVCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66475B71279C2607000A4E31 /* MVCacheTests.swift */; };
 		664B4F02279CC59F000E20F1 /* MarvelCharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664B4F01279CC59F000E20F1 /* MarvelCharacterModel.swift */; };
 		664B4F05279CCB65000E20F1 /* MarvelListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664B4F04279CCB65000E20F1 /* MarvelListRowView.swift */; };
+		664B4F07279CE9FD000E20F1 /* MarvelFavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664B4F06279CE9FD000E20F1 /* MarvelFavoriteView.swift */; };
 		66BBC2C7279B326400AC97EC /* MarvelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BBC2C6279B326400AC97EC /* MarvelAPI.swift */; };
 		66BBC2CA279B33C900AC97EC /* MVURI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BBC2C9279B33C900AC97EC /* MVURI.swift */; };
 		66BBC2D0279B356E00AC97EC /* MVList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BBC2CF279B356E00AC97EC /* MVList.swift */; };
@@ -59,6 +60,7 @@
 		66475B71279C2607000A4E31 /* MVCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCacheTests.swift; sourceTree = "<group>"; };
 		664B4F01279CC59F000E20F1 /* MarvelCharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharacterModel.swift; sourceTree = "<group>"; };
 		664B4F04279CCB65000E20F1 /* MarvelListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelListRowView.swift; sourceTree = "<group>"; };
+		664B4F06279CE9FD000E20F1 /* MarvelFavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelFavoriteView.swift; sourceTree = "<group>"; };
 		66527215279C3ED800C86275 /* ODK-Marvel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ODK-Marvel-Info.plist"; sourceTree = SOURCE_ROOT; };
 		66527216279C3F6000C86275 /* ODK-MarvelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ODK-MarvelTests-Info.plist"; sourceTree = SOURCE_ROOT; };
 		66527217279C3F6700C86275 /* ODK-MarvelUITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ODK-MarvelUITests-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -127,9 +129,11 @@
 		664B4F03279CCB46000E20F1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				66F92679279B2F19002D109A /* ContentView.swift */,
 				66BBC2E4279B815100AC97EC /* MarvelListView.swift */,
 				66BBC2E6279B816300AC97EC /* MarvelDetailView.swift */,
 				664B4F04279CCB65000E20F1 /* MarvelListRowView.swift */,
+				664B4F06279CE9FD000E20F1 /* MarvelFavoriteView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -213,7 +217,6 @@
 				66BBC2DB279B439900AC97EC /* Extensions */,
 				66BBC2C5279B306300AC97EC /* Marvel_API */,
 				66F92677279B2F19002D109A /* ODK_MarvelApp.swift */,
-				66F92679279B2F19002D109A /* ContentView.swift */,
 				66F9267B279B2F1B002D109A /* Assets.xcassets */,
 				66F92680279B2F1B002D109A /* Persistence.swift */,
 				66F92682279B2F1B002D109A /* ODK_Marvel.xcdatamodeld */,
@@ -398,6 +401,7 @@
 				66F92681279B2F1B002D109A /* Persistence.swift in Sources */,
 				66BBC2D2279B35FD00AC97EC /* MVURL.swift in Sources */,
 				66F9267A279B2F19002D109A /* ContentView.swift in Sources */,
+				664B4F07279CE9FD000E20F1 /* MarvelFavoriteView.swift in Sources */,
 				66BBC2E5279B815100AC97EC /* MarvelListView.swift in Sources */,
 				66BBC2D4279B363900AC97EC /* MVPath.swift in Sources */,
 				66F92678279B2F19002D109A /* ODK_MarvelApp.swift in Sources */,
