@@ -132,7 +132,7 @@
 			path = Cache;
 			sourceTree = "<group>";
 		};
-		664B4F03279CCB46000E20F1 /* Views */ = {
+		664B4F03279CCB46000E20F1 /* Marvel_Views */ = {
 			isa = PBXGroup;
 			children = (
 				66F92679279B2F19002D109A /* ContentView.swift */,
@@ -141,7 +141,7 @@
 				664B4F04279CCB65000E20F1 /* MarvelListRowView.swift */,
 				664B4F06279CE9FD000E20F1 /* MarvelFavoriteView.swift */,
 			);
-			path = Views;
+			path = Marvel_Views;
 			sourceTree = "<group>";
 		};
 		6667518C279DBF8600711FF5 /* Marvel_Animations */ = {
@@ -186,13 +186,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		66BBC2E8279B828A00AC97EC /* Marvel_Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Marvel_Views;
-			sourceTree = "<group>";
-		};
 		66BBC2E9279B829B00AC97EC /* Marvel_ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,10 +220,9 @@
 			children = (
 				66527215279C3ED800C86275 /* ODK-Marvel-Info.plist */,
 				66BBC2E9279B829B00AC97EC /* Marvel_ViewModels */,
-				664B4F03279CCB46000E20F1 /* Views */,
+				664B4F03279CCB46000E20F1 /* Marvel_Views */,
 				6667518C279DBF8600711FF5 /* Marvel_Animations */,
 				66475B6E279C1D17000A4E31 /* Cache */,
-				66BBC2E8279B828A00AC97EC /* Marvel_Views */,
 				66BBC2DB279B439900AC97EC /* Extensions */,
 				66BBC2C5279B306300AC97EC /* Marvel_API */,
 				66F92677279B2F19002D109A /* ODK_MarvelApp.swift */,
