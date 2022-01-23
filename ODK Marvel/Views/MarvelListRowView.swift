@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct MarvelListRowView: View {
-    @State var character: MarvelCharacterModel
-    @State var image: UIImage
-    @State var favorite: Bool 
+    @State private var character: MarvelCharacterModel
+    @State private var image: UIImage
+    @State private var favorite: Bool 
     
     init(character: MarvelCharacterModel) {
         self.character = character

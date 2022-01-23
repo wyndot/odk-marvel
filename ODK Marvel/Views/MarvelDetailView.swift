@@ -10,12 +10,12 @@ import CryptoKit
 
 struct MarvelDetailView: View {
     @Environment(\.characterList) var marvelList
-    @State var character: MarvelCharacterModel
-    @State var image: UIImage
-    @State var favorite: Bool
-    @State var imageOffset: CGSize = CGSize(width: 0, height: -20)
-    @State var imageScale: CGSize = CGSize(width: 0, height: 0)
-    @State var imageAngle: CGFloat = 1000
+    @State private var character: MarvelCharacterModel
+    @State private var image: UIImage
+    @State private var favorite: Bool
+    @State private var imageOffset: CGSize = CGSize(width: 0, height: -20)
+    @State private var imageScale: CGSize = CGSize(width: 0, height: 0)
+    @State private var imageAngle: CGFloat = 1000
     
     init(character: MarvelCharacterModel) {
         self.character = character

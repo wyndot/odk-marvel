@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MarvelFavoriteView: View {
     @Environment(\.characterList) var marvelList
-    @State var list: [MarvelCharacterModel] = []
+    @State private var list: [MarvelCharacterModel] = []
     
     var body: some View {
         NavigationView {
