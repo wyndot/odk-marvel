@@ -19,13 +19,13 @@ struct MarvelListRowView: View {
             }
         }
         .onReceive(character.$image) { res in
-            image = res 
+            image = res
         }
     }
 }
 
 struct MarvelListRowView_Previews: PreviewProvider {
     static var previews: some View {
-        MarvelListRowView(character: MarvelCharacterModel(id: 0, name: "", description: "", imagePath: MVPath(path: "", extension: ""), imageVariant: .fullSize))
+        MarvelListRowView(character: MarvelCharacterModel(id: 0, name: "3-D Man", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ", imagePath: MVPath(path: "", extension: ""), imageVariant: .fullSize)).frame(height: 40)
     }
 }

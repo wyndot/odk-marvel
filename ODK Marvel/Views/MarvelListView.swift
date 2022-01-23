@@ -14,14 +14,21 @@ struct MarvelListView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(list) { item in
-                    NavigationLink {
-                        MarvelDetailView(character: MarvelCharacterModel(model: item, imageVariant: .fullSize))
-                    } label: {
-                        MarvelListRowView(character: item)
+                    ForEach(list) { item in
+                        NavigationLink {
+                            MarvelDetailView(character: MarvelCharacterModel(model: item, imageVariant: .fullSize)).navigationTitle(item.name)
+                        } label: {
+                            MarvelListRowView(character: item)
+                        }
                     }
-                }
-            }
+                    HStack(alignment: .center, spacing: 0) {
+                        Button {
+                            marvelList.loadMore()
+                        } label: {
+                            Text("Load more...").font(.headline).foregroundColor(.accentColor).frame(maxWidth: .infinity)
+                        }
+                    }
+                }.navigationTitle("Marvel Characters")
         }
         .onReceive(marvelList.$characters) { characters in
             self.list = characters.map { MarvelCharacterModel(character: $0)}
@@ -31,6 +38,6 @@ struct MarvelListView: View {
 
 struct MarvelListView_Previews: PreviewProvider {
     static var previews: some View {
-        MarvelListView()
+        MarvelListView().environment(\.characterList, MarvelCharacterList())
     }
 }
