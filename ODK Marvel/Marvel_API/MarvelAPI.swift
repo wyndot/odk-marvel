@@ -103,7 +103,7 @@ struct MarvelAPI {
             return Fail<UIImage, Error>(error: MVAPIError.invalidURL).eraseToAnyPublisher()
         }
         
-        if let image = Self.cache[path] {
+        if let image = Self.cache[actual] {
             return Result.Publisher(image).eraseToAnyPublisher()
         }
         

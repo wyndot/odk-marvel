@@ -9,24 +9,22 @@ import SwiftUI
 
 struct MarvelListView: View {
     @Environment(\.characterList) var marvelList
-    @State var list: [MarvelCharacterListItem] = []
+    @State var list: [MarvelCharacterModel] = []
     
     var body: some View {
         NavigationView {
             List {
                 ForEach(list) { item in
                     NavigationLink {
-                        // MarvelCharacterListItem is built from marvelList, so filter marvelList with the name of the character will always return the character
-                        MarvelDetailView(character: MarvelCharacterDetailItem(character: marvelList.characters.filter{ $0.name == item.name }.first!)
-                        )
+                        MarvelDetailView(character: MarvelCharacterModel(model: item, imageVariant: .fullSize))
                     } label: {
-                        Text(item.name)
+                        MarvelListRowView(character: item)
                     }
                 }
             }
         }
         .onReceive(marvelList.$characters) { characters in
-            self.list = characters.map { MarvelCharacterListItem(id: $0.id ?? 0, name: $0.name ?? "", description: $0.description ?? "")}
+            self.list = characters.map { MarvelCharacterModel(character: $0)}
         }
     }
 }
