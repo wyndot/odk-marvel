@@ -13,7 +13,8 @@ struct ODK_MarvelApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView().environment(\.characterList, MarvelCharacterList())
+            ContentView()
+                .environment(\.characterList, MarvelCharacterList())
         }
     }
 }

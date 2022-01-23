@@ -13,7 +13,9 @@ final class MarvelCharacterList: ObservableObject {
     @Published var limit: Int = 10
     @Published var offset: Int = 0
     @Published var characters: [MVCharacter] = []
+    @Published var favorites: [MVCharacter] = []
     private var characterIDs: Set<Int> = []
+    private var favoritesIDs: Set<Int> = []
     
     private var loadCancellable: AnyCancellable?
     
@@ -57,6 +59,60 @@ final class MarvelCharacterList: ObservableObject {
         load(offset: self.offset + self.limit)
     }
     
+    ///
+    /// Add character with id to the favorites list
+    ///
+    /// - parameters:
+    ///  - id: the character id
+    ///
+    func addFavorite(id: Int) {
+        guard characterIDs.contains(id) else {
+            return
+        }
+        guard !favoritesIDs.contains(id) else {
+            return
+        }
+        
+        var newCharacters = characters
+        guard let idx = newCharacters.firstIndex(where: {$0.id == id}) else {
+            fatalError("Character List corrupted")
+        }
+        var character = newCharacters[idx]
+        character.favorite = true
+        favorites.append(character)
+        favoritesIDs.insert(id)
+        newCharacters.remove(at: idx)
+        newCharacters.insert(character, at: idx)
+        characters = newCharacters
+    }
+    
+    ///
+    /// Remove the character with id from the favorites list
+    ///
+    /// - parameters:
+    ///  - id: the character id
+    ///
+    func removeFavorite(id: Int) {
+        guard favoritesIDs.contains(id) else {
+            return
+        }
+        favoritesIDs.remove(id)
+        guard let idx = favorites.firstIndex(where: {$0.id == id}) else {
+            fatalError("Favorites List corupted")
+        }
+        favorites.remove(at: idx)
+        
+        var newCharacters = characters
+        guard let idx = newCharacters.firstIndex(where: {$0.id == id}) else {
+            fatalError("Character List corrupted")
+        }
+        var character = newCharacters[idx]
+        character.favorite = false
+        newCharacters.remove(at: idx)
+        newCharacters.insert(character, at: idx)
+        characters = newCharacters
+    }
+     
     ///
     /// append the characters and make sure the characters in the list are unique
     ///

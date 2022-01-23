@@ -16,7 +16,9 @@ struct MarvelListView: View {
             List {
                     ForEach(list) { item in
                         NavigationLink {
-                            MarvelDetailView(character: MarvelCharacterModel(model: item, imageVariant: .fullSize)).navigationTitle(item.name)
+                            MarvelDetailView(character: item)
+                                .navigationTitle(item.name)
+                                .navigationBarTitleDisplayMode(.inline)
                         } label: {
                             MarvelListRowView(character: item)
                         }
@@ -28,11 +30,24 @@ struct MarvelListView: View {
                             Text("Load more...").font(.headline).foregroundColor(.accentColor).frame(maxWidth: .infinity)
                         }
                     }
-                }.navigationTitle("Marvel Characters")
+                }
+            .navigationTitle("Marvel Characters")
         }
+        .navigationViewStyle(StackNavigationViewStyle())
         .onReceive(marvelList.$characters) { characters in
-            self.list = characters.map { MarvelCharacterModel(character: $0)}
+            if (list.count == characters.count) {
+                // update the list
+                for (idx, item) in list.enumerated() {
+                    item.update(character: characters[idx])
+                }
+            }
+            else {
+                // recreate the list
+                list = characters.map {MarvelCharacterModel(character: $0)}
+            }
+            
         }
+        
     }
 }
 

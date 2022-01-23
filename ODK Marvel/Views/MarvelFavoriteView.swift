@@ -8,8 +8,28 @@
 import SwiftUI
 
 struct MarvelFavoriteView: View {
+    @Environment(\.characterList) var marvelList
+    @State var list: [MarvelCharacterModel] = []
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List {
+                    ForEach(list) { item in
+                        NavigationLink {
+                            MarvelDetailView(character: item)
+                                .navigationTitle(item.name)
+                                .navigationBarTitleDisplayMode(.inline)
+                        } label: {
+                            MarvelListRowView(character: item)
+                        }
+                    }
+                }
+            .navigationTitle("Favorite Characters")
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
+        .onReceive(marvelList.$favorites) { characters in
+            self.list = characters.map { MarvelCharacterModel(character: $0)}
+        }
     }
 }
 

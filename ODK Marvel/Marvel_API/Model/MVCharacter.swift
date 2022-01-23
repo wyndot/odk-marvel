@@ -19,4 +19,8 @@ struct MVCharacter: Codable {
     let stories: MVList?
     let events: MVList?
     let series: MVList?
+    
+    // state variable in the app 
+    var favorite: Bool?
+    
 }
