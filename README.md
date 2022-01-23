@@ -4,14 +4,15 @@ A demonstration app for ODK Media. It has been implemented with SwiftUI and Comb
 ## Marvel API 
 This application is using [Marvel Developer API](https://developer.marvel.com/) to retrieve contents. We are only using one endpoint `/v1/public/characters` for the demonstration.  Here is the [documentation](https://developer.marvel.com/docs#!/public/getCreatorCollection_get_0) of the API.
 
-The app need three environment variables to run correctly. They are `marvel_public_key`, `marvel_private_key`, and `marvel_base_url`. You can fetch them from you Marvel developer portal. 
+### **The app NEED THREE ENVIRONMENT VARIABLES to run correctly**. 
+They are `marvel_public_key`, `marvel_private_key`, and `marvel_base_url`. You can fetch them from you Marvel developer portal. 
 
-You can set those three environment variables via Xcode scheme configuration. `marvel_public_key`, `marvel_private_key` are required. `marvel_base_url` is optional. We have default set in the code.
+You can set those three environment variables via Xcode scheme configuration. `marvel_public_key`, `marvel_private_key` are required. `marvel_base_url` is optional. I have a default set in the code.
 
 The functions related to the Marvel API are static functions inside the `MarvelAPI` struct. 
 
 ## Data Models
-The main data model for the Marvel API is `MVCharacter`. It's struct mapping to the API server side objects. It's where we store the characters fetched from the Marvel server. 
+The main data model for the Marvel API is `MVCharacter`. It's struct mapping to the API server side objects. It's where we store the character information fetched from the Marvel server. 
 
 Other structs like `MVDataWrapper`, `MVDataContainer`, `MVList`, `MVURI`, `MVURL`, and `MVPath` are used for decoding and storing the informations from the Marvel server. 
 
