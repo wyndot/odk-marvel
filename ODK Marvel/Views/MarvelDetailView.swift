@@ -13,6 +13,9 @@ struct MarvelDetailView: View {
     @State var character: MarvelCharacterModel
     @State var image: UIImage
     @State var favorite: Bool
+    @State var imageOffset: CGSize = CGSize(width: 0, height: -20)
+    @State var imageScale: CGSize = CGSize(width: 0, height: 0)
+    @State var imageAngle: CGFloat = 1000
     
     init(character: MarvelCharacterModel) {
         self.character = character
@@ -23,6 +26,9 @@ struct MarvelDetailView: View {
     var body: some View {
         VStack(alignment: .center, spacing: 10) {
             Image(uiImage:image).resizable().scaledToFit()
+                .drop(offset: imageOffset)
+                .expand(scale: imageScale)
+                .rotate(angle: imageAngle)
             Text(character.name).font(.largeTitle).foregroundColor(.accentColor)
             Text(character.description).font(.caption).foregroundColor(.accentColor)
             Spacer()
@@ -46,16 +52,18 @@ struct MarvelDetailView: View {
         }
         .padding(EdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20))
         .onReceive(character.$image) { res in
-            guard let img = res else {
-                return
-            }
-            image = img
+//            guard let img = res else {
+//                return
+//            }
+//            image = img
         }
         .onReceive(character.$fullImage, perform: { res in
             guard let img = res else {
                 return
             }
             image = img
+            
+            randomAnimation()
         })
         .onReceive(character.$favorite, perform: { res in
             favorite = res
@@ -65,6 +73,57 @@ struct MarvelDetailView: View {
         }
         .onDisappear {
             character.unloadFullImage()
+        }
+    }
+    
+    ///
+    /// randomize the animation of the image
+    /// 
+    
+    func randomAnimation() {
+        switch Int.random(in: 0...4) {
+        case 0:
+            imageOffset = CGSize(width: 0, height: -50)
+            imageScale = CGSize(width: 1, height: 1)
+            imageAngle = 0
+            withAnimation(Animation.interpolatingSpring(mass: 1, stiffness: 50, damping: 1, initialVelocity: 5)) {
+                imageOffset = CGSize()
+            }
+            
+        case 1:
+            imageOffset = CGSize(width: -50, height: 0)
+            imageScale = CGSize(width: 1, height: 1)
+            imageAngle = 0
+            withAnimation(Animation.interpolatingSpring(mass: 1, stiffness: 50, damping: 1, initialVelocity: 5)) {
+                imageOffset = CGSize()
+            }
+            
+        case 2:
+            imageOffset = CGSize(width: 0, height: 0)
+            imageScale = CGSize(width: 0, height: 0)
+            imageAngle = 1000
+            withAnimation(Animation.easeOut(duration: 1)) {
+                imageScale = CGSize(width: 1, height: 1)
+                imageAngle = 0
+            }
+        case 3:
+            imageOffset = CGSize(width: 0, height: 0)
+            imageScale = CGSize(width: 0, height: 1)
+            imageAngle = 0
+            withAnimation(Animation.easeOut(duration: 1)) {
+                imageScale = CGSize(width: 1, height: 1)
+                imageAngle = 0
+            }
+        case 4:
+            imageOffset = CGSize(width: 0, height: 0)
+            imageScale = CGSize(width: 1, height: 0)
+            imageAngle = 0
+            withAnimation(Animation.easeOut(duration: 1)) {
+                imageScale = CGSize(width: 1, height: 1)
+                imageAngle = 0
+            }
+        default:
+            break
         }
     }
 }
